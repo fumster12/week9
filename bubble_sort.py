@@ -2,8 +2,16 @@ import random
 
 def sort(items):
   # 1. TO DO: Implement a "bubble sort" routine here
-  pass
-
+  n = len(items) #(n=6)
+  swapped = True
+  while swapped:
+      swapped = False
+      for i, item in enumerate(items):
+          if i != n-1 and items[i] > items[i + 1]:
+             items[i+1], items[i] = items[i], items[i+1] 
+             swapped = True
+      
+  return items
 
 numbers = list(range(10))
 random.shuffle(numbers)
