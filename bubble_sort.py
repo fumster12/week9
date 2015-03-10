@@ -2,7 +2,7 @@ import random
 
 def sort(items):
   # 1. TO DO: Implement a "bubble sort" routine here
-  n = len(items) #(n=6)
+  n = len(items)
   swapped = True
   while swapped:
       swapped = False
@@ -21,4 +21,4 @@ print("The list was sorted correctly!")
 
 # 2. Change this print statement to display the complexity category.
 #    Refer to the cheat sheet in week9-class for examples.
-print("This algorithm is classified as: O(....)")
+print("This algorithm is classified as: O(n^2) ")
